@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+/* global styles */
+.sips_trans_ref_table_id_customer_result,
+.sips_trans_ref_table_id_transaction_result,
+.sips_trans_ref_table_amount_transaction_result {
+	font-style: normal;
+}
+
+.sips_trans_ref_table td {
+	vertical-align: bottom;
+}
+
+b {
+	font-weight: normal;
+	font-size: calc(14rem / 16);
+}
+
+form {
+	font-size: 0;
+}
+
+.sips_cryptogram_table tbody,
+.sips_cryptogram_table tr,
+.sips_cryptogram_table td {
+	display: block;
+	width: 100%;
+}
+
+/* hidden elements */
+.sips_secure_message,
+.sips_threeD_info_message,
+.sips_submit_message,
+.sips_shop_name_table,
+.sips_logo,
+#ID_SLASH,
+.sips_trans_ref_table tr:nth-child(3) td:nth-child(1),
+center:last-of-type b,
+br,
+hr {
+	display: none;
+}
+
+/* page background */
+html {
+	background-image: url('https://backend.btc-develop.frogeek.com/img/background.jpg');
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", sans-serif;
+}
+
+/* content block */
+.sips_body_page {
+	box-sizing: border-box;
+	width: 100%;
+	max-width: calc(400rem / 16);
+	margin: 0 auto;
+	padding: calc(50rem / 16) calc(40rem / 16);
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #FEFEFE 100%);
+	background-image: linear-gradient(-180deg, #FFFFFF 0%, #FEFEFE 100%);
+	border: 1px solid #C3C3C3;
+	box-shadow: 0 5px 9px 2px rgba(223,223,223,0.76);
+	border-radius: 4px;
+	text-align: center;
+	margin-top: calc(60rem / 16);
+}
+
+
+
+/* space under rows */
+.sips_trans_ref_table tr:nth-of-type(2) td {
+	padding: calc(8rem / 16) 0;
+}
+
+/* right column */
+.sips_trans_ref_table td:nth-of-type(2) {
+	text-align: right;
+}
+
+/* "valider" button */
+.sips_submit_button {
+	display: inline-block;
+	width: calc(220rem / 16);
+	font-size: calc(16rem / 16);
+	background-color: #7EC92C;
+	text-transform: uppercase;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border-radius: calc(25rem / 16);
+	padding: calc(13rem /16) 0;
+	border-bottom: 1px solid #629E20;
+	cursor: pointer;
+	margin-top: calc(15rem / 16);
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.sips_submit_button:hover {
+	opacity: 0.85;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
+}
+
+/* return button */
+.sips_customer_return_button {
+	color: #7E7E7E;
+	font-size: calc(11rem / 16);
+	border: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	text-transform: lowercase;
+	text-decoration: underline;
+	cursor: pointer;
+	font-size: calc(11rem / 16);
+	margin-top: calc(30rem / 16);
+}
+
+/* "100% sécurisé" */
+center:last-of-type:before{
+	content: "\A 100% secured transaction \A Lemon Way, Payment Institution";
+	display: inline-block;
+	font-size: calc(14rem / 16);
+	padding-left: calc(20rem / 16);
+	color: #7EC92C;
+	margin-top: calc(16rem / 16);
+	background-size: contain;
+	white-space: pre;
+
+}
+
+center:last-of-type:before img {
+	height: calc(40rem / 16);
+}
+
+/* payment infos */
+.sips_trans_ref_table {
+	color: #888C9C;
+	margin-bottom: calc(5rem / 16);
+	font-size: 0;
+}
+
+/* card infos */
+
+/* card number input*/
+.sips_card_number_input {
+	width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #DFDDDD;
+	border-radius: 4px;
+	height: calc(42rem / 16);
+	padding: 0 calc(11rem / 16);
+	font-size: calc(16rem / 16);
+	margin-bottom: calc(15rem / 16);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* month input */
+.sips_expiry_month_card_input {
+	font-size: calc(14rem / 16);
+	height: calc(40rem / 16);
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	margin-right: 2%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #DFDDDD;
+	background-color: #fff;
+	padding-left: calc(10rem / 16);
+	border-radius: 4px;
+	background-image: url(arrow_down.png);
+	background-position: 90% center;
+	background-size: calc(6rem / 16) calc(4rem / 16);
+	background-repeat: no-repeat;
+}
+/* year input */
+.sips_expiry_year_card_input {
+	font-size: calc(14rem / 16);
+	height: calc(40rem / 16);
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	margin-right: 2%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: 1px solid #DFDDDD;
+	background-color: #fff;
+	padding-left: calc(10rem / 16);
+	border-radius: 4px;
+	background-image: url(arrow_down.png);
+	background-position: 90% center;
+	background-size: calc(6rem / 16) calc(4rem / 16);
+	background-repeat: no-repeat;
+}
+
+/* CVC input */
+.sips_cryptogram_table {
+	border: 0;
+	display: inline-block;
+	border-collapse: collapse;
+	width: 26%;
+	position: relative;
+	top: calc(-17rem / 16);
+}
+
+.sips_cryptogram_table tbody,
+.sips_cryptogram_table tr,
+.sips_cryptogram_table td {
+	display: block;
+	width: 100%;
+}
+
+.sips_cryptogram_message {
+	border: 0;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.sips_cvvkey_mandatory_text_input {
+	border: 1px solid #DFDDDD;
+	border-radius: 4px;
+	height: calc(40rem / 16);
+	padding: 0 calc(11rem / 16);
+	font-size: calc(14rem / 16);
+	box-sizing: border-box;
+	width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.sips_popup_message:before {
+	position: absolute;
+	right: calc(5rem / 16);
+	top: calc(22rem / 16);
+	display: block;
+	height: calc(30rem / 16);
+	width: calc(30rem / 16);
+	content: "?";
+	font-size: calc(13rem / 16);
+	z-index: 0;
+	color: #7e7e7e;
+	background-color: #ddd;
+	border-radius: 100%;
+	line-height: calc(30rem / 16);
+}
+
+#span_sips_card_cvv2_message {
+	display: block;
+	font-size: 0;
+	height: calc(17rem / 16);
+}
+
+#span_sips_card_cvv2_message:before {
+	content: 'CVC :';
+	display: block;
+	font-size: calc(12rem / 16);
+	margin-bottom: calc(2rem / 16);
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	line-height: calc(12rem / 16);
+}
+
+.sips_card_number_title,
+.sips_expiry_date_card_title {
+	display: block;
+	font-size: calc(12rem / 16);
+	text-align: left;
+	margin-bottom: calc(2rem / 16);
+}
+
+/* ordering elements */
+
+.sips_trans_ref_table,
+.sips_trans_ref_table tbody,
+.sips_trans_ref_table tr {
+	display: block;
+	width: 100%;
+}
+
+.sips_trans_ref_table td {
+	display: inline-block;
+	width: 49%;
+}
+
+.sips_trans_ref_table tr:nth-child(3) {
+	margin: calc(10rem / 16) 0;
+}
+
+/* amount */
+.sips_trans_ref_table_amount_transaction_result {
+	font-weight: normal;
+	position: relative;
+	font-size: calc(23rem / 16);
+	color: #7EC92C;
+	line-height: calc(22rem / 16);
+	background-color: #fff;
+	padding: 0 calc(60rem / 16);
+}
+
+/* amount gray line */
+.sips_trans_ref_table tr:nth-child(3):before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 1px;
+	background-color: #E8E8E8;
+	position: relative;
+	top: calc(12rem / 16);
+}
+
+.sips_trans_ref_table tr:nth-child(3) td:nth-child(2) {
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+/* error message */
+.sips_error {
+	display: inline-block;
+	margin-bottom: calc(20rem / 16);
+}
+
+.sips_error_code {
+	font-style: normal;
+}
+
+/* responsive */
+@media (max-width: 400px) {
+	.sips_body_page {
+		margin-top: 0;
+		padding: calc(30rem / 16);
+		border-radius: 0;
+	}
+
+	.sips_popup_message:before {
+		right: calc(5rem / 16);
+		top: calc(24rem / 16);
+		height: calc(26rem / 16);
+		width: calc(26rem / 16);
+		line-height: calc(28rem / 16);
+	}
+
+	.sips_body_page:before {
+		margin-bottom: calc(20rem / 16);
+	}
+
+	.sips_trans_ref_table tr:nth-child(3) {
+		margin-bottom: calc(15rem / 16);
+	}
+}
+
+@media (max-width: 350px) {
+	.sips_body_page {
+		padding: calc(20rem / 16);
+	}
+}
+
+/* btc logo */
+body.sips_body_page::before {
+  display: inline-block;
+  content: " ";
+  margin-bottom: 10px;
+  background-image: url('https://backend.btc-develop.frogeek.com/img/mainLogo.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  height: 80px;
+  width: 80px;
+}
